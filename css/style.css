@@ -12,23 +12,75 @@ body{
     background-color: var(--body-color);
 }
 
-header{
+.navbar{
+    width: 100vw;
+    height: 10vh;
+    background-color: #ac7753;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.div-logo{
+    position: absolute;
+    width: 25%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-span{
+    position: absolute;
+    right: 1rem;
+    height: 10vh;
+}
+.itens{
+    float: right;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 25%;
-    width: 100vw;
-    height: 10vh;
+    list-style: none;
+}
+.itens a{
+    color: #FFF;
+}
+.item{
+    margin: 4vh;
+    margin-left: 10rem;
+    color: #FFF;
+    font-family: 'Overpass', sans-serif;
 }
 
 main{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100vw;
-    height: 50vh;
+    height: auto;
+    border: solid yellow;
+}
+
+.div-texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 50vw;
+    height: auto;
+    border: solid red;
+    
+}
+.div-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: auto;
     border: solid red;
 }
 
@@ -36,6 +88,8 @@ main{
     width: 30vw;
     height: 50vh;
     margin-bottom: 5rem;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
 }
 
 footer{

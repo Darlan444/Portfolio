@@ -12,7 +12,7 @@
     --color-text-white: #FFF;
     --color-navbar-one: #ac7753;
     --color-footer: #404040;
-    --logo-font-size: 3rem;
+    --font-size-1: 3rem;
 }
 
 ::-webkit-scrollbar {
@@ -54,7 +54,7 @@ body{
 /**Nome Effect*/
 .span-nome{
     font-family: var(--menu-font-family);
-    font-size: var(--logo-font-size);
+    font-size: var(--font-size-1);
     color: var(--color-text-white);
 }
 .typing{
@@ -76,6 +76,11 @@ body{
     50%{
         border-color: transparent
     }
+}
+
+.desc{
+    font-family: var(--menu-font-family);
+    color: var(--color-text-white);
 }
 
 .div-logo{

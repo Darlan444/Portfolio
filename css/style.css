@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@100&display=swap&family=Silkscreen&display=swap"');
 *{
     margin: 0;
     padding: 0;
@@ -6,7 +7,28 @@
 
 :root{
     --body-color: #252525;
+    --main-font-family: 'Overpass', sans-serif;
+    --menu-font-family: 'Silkscreen', cursive;
+    --color-text-white: #FFF;
+    --color-navbar-one: #ac7753;
+    --color-footer: #404040;
+    --logo-font-size: 3rem;
 }
+
+::-webkit-scrollbar {
+    width: 0.35rem;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--body-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-navbar-one);
+    border-radius: 5%;
+}
+
 
 body{
     background-color: var(--body-color);
@@ -15,14 +37,50 @@ body{
 .navbar{
     width: 100vw;
     height: 10vh;
-    background-color: #ac7753;
+    background-color: var(--color-navbar-one);
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.logo{
+    width: 6vw;
+    height: 10vh;
+}
+
+/**Nome Effect*/
+.span-nome{
+    font-family: var(--menu-font-family);
+    font-size: var(--logo-font-size);
+    color: var(--color-text-white);
+}
+.typing{
+    animation: typing 2s steps(22), blink .5s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: solid #000 3px;
+    width: 460px;
+}
+@keyframes typing{
+    from{
+        width: 0
+    }
+    to{
+        width: 460px
+    }
+}
+@keyframes blink{
+    50%{
+        border-color: transparent
+    }
 }
 
 .div-logo{
     position: absolute;
+    left: 12%;
     width: 25%;
     height: 10vh;
     display: flex;
@@ -42,25 +100,30 @@ body{
     align-items: center;
     justify-content: center;
     list-style: none;
+    margin-right: 5rem;
 }
 .itens a{
-    color: #FFF;
+    color: var(--color-text-white);
+    font-family: var(--menu-font-family);
 }
 .item{
     margin: 4vh;
-    margin-left: 10rem;
-    color: #FFF;
-    font-family: 'Overpass', sans-serif;
+    margin-left: 5rem;
+}
+.itens a:hover{
+    color: var(--body-color);
 }
 
 main{
+    margin-top: 10vh;
+}
+.principal{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
-    width: 100vw;
-    height: auto;
-    border: solid yellow;
+    justify-content: space-between;
+    width: 100%;
+    height: 100vh;
 }
 
 .div-texto{
@@ -71,8 +134,15 @@ main{
     gap: 1rem;
     width: 50vw;
     height: auto;
-    border: solid red;
-    
+}
+
+.p-texto{
+    font-family: var(--main-font-family);
+    color: var(--color-text-white);
+}
+
+.linha-texto{
+    width: 15rem;
 }
 .div-img{
     display: flex;
@@ -81,15 +151,16 @@ main{
     justify-content: center;
     width: 50vw;
     height: auto;
-    border: solid red;
 }
 
 .img-foto{
     width: 30vw;
-    height: 50vh;
+    height: 80vh;
+    margin-top: -5rem;
+    margin-left: -2rem;
     margin-bottom: 5rem;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
 }
 
 footer{
@@ -102,4 +173,85 @@ footer{
     height: 10vh;
     position: relative;
     bottom: 0;
+    background-color: var(--color-footer);
+}
+
+
+/**ICONS**/
+.bxl-html5{
+    color: rgb(236, 67, 0);
+}
+.bxl-css3{
+    color: rgb(0, 102, 255);
+}
+.bxl-javascript{
+    color: rgb(255, 200, 0);
+}
+.bxl-php{
+    color: rgb(74, 63, 170);
+}
+.bxl-git{
+    color: rgb(255, 0, 0);
+}
+
+.bxl-linkedin-square{
+    color: rgb(0, 102, 255);
+}
+.bxl-github{
+    color: rgb(255, 255, 255);
+}
+
+.bxl-html5:hover{
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+.bxl-css3:hover{
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+.bxl-javascript:hover{
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+.bxl-php:hover{
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+.bxl-git:hover{
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+.bxl-linkedin-square:hover{
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+.bxl-github:hover{
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+.scroll-top{
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    background-color: var(--color-navbar-one);
+    border-radius: 15%;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    z-index: 999;
+}
+.btn-wpp{
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    background-color: var(--color-navbar-one);
+    color: var(--color-text-white);
+    border-radius: 15%;
+    width: 3rem;
+    height: 3rem;
+    display: grid;
+    place-items: center;
+    z-index: 999;
+}
+
+.bxl-whatsapp{
+    color: var(--color-text-white);
+}
+.bx-chevron-up{
+    color: var(--body-color);
 }

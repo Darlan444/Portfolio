@@ -8,8 +8,9 @@ window.addEventListener('scroll', () => {
     }
 })
 
-
-$(".scroll-top").click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-  });
+function scrolltop(){
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+}

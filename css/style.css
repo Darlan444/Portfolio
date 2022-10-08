@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Overpass:wght@100&display=swap&family=Silkscreen&display=swap"');
-*{
+
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-:root{
+:root {
     --body-color: #252525;
     --main-font-family: 'Overpass', sans-serif;
     --menu-font-family: 'Silkscreen', cursive;
@@ -35,11 +36,11 @@ html{
 }
 
 
-body{
+body {
     background-color: var(--body-color);
 }
 
-.navbar{
+.navbar {
     width: 100vw;
     height: 10vh;
     background-color: var(--color-navbar-one);
@@ -51,44 +52,48 @@ body{
     z-index: 999;
 }
 
-.logo{
+.logo {
     width: 6vw;
     height: 10vh;
 }
 
 /**Nome Effect*/
-.span-nome{
+.span-nome {
     font-family: var(--menu-font-family);
     font-size: var(--font-size-1);
     color: var(--color-text-white);
 }
-.typing{
+
+.typing {
     animation: typing 2s steps(22), blink .5s step-end infinite;
     white-space: nowrap;
     overflow: hidden;
     border-right: solid #000 3px;
     width: 460px;
 }
-@keyframes typing{
-    from{
+
+@keyframes typing {
+    from {
         width: 0
     }
-    to{
+
+    to {
         width: 460px
     }
 }
-@keyframes blink{
-    50%{
+
+@keyframes blink {
+    50% {
         border-color: transparent
     }
 }
 
-.desc{
+.desc {
     font-family: var(--menu-font-family);
     color: var(--color-text-white);
 }
 
-.div-logo{
+.div-logo {
     position: absolute;
     left: 12%;
     width: 25%;
@@ -98,12 +103,13 @@ body{
     align-items: center;
 }
 
-.div-span{
+.div-span {
     position: absolute;
     right: 1rem;
     height: 10vh;
 }
-.itens{
+
+.itens {
     float: right;
     display: flex;
     flex-direction: row;
@@ -112,22 +118,26 @@ body{
     list-style: none;
     margin-right: 5rem;
 }
-.itens a{
+
+.itens a {
     color: var(--color-text-white);
     font-family: var(--menu-font-family);
 }
-.item{
+
+.item {
     margin: 4vh;
     margin-left: 5rem;
 }
-.itens a:hover{
+
+.itens a:hover {
     color: var(--body-color);
 }
 
-main{
+main {
     margin-top: 10vh;
 }
-.principal{
+
+.principal {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -135,18 +145,20 @@ main{
     width: 100%;
     height: 100vh;
 }
-.shadow{
+
+.shadow {
     width: 100vw;
     height: 5rem;
     background: linear-gradient(to top, var(--body-color-2), transparent);
 }
-.shadow-footer{
+
+.shadow-footer {
     width: 100vw;
     height: 5rem;
     background: linear-gradient(to top, var(--color-footer), transparent);
 }
 
-.div-texto{
+.div-texto {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,15 +168,16 @@ main{
     height: auto;
 }
 
-.p-texto{
+.p-texto {
     font-family: var(--main-font-family);
     color: var(--color-text-white);
 }
 
-.linha-texto{
+.linha-texto {
     width: 15rem;
 }
-.div-img{
+
+.div-img {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -173,7 +186,7 @@ main{
     height: auto;
 }
 
-.img-foto{
+.img-foto {
     width: 30vw;
     height: 80vh;
     margin-top: -5rem;
@@ -183,7 +196,7 @@ main{
     border-bottom-right-radius: 5%;
 }
 
-footer{
+footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -195,75 +208,99 @@ footer{
     bottom: 0;
     background-color: var(--color-footer);
 }
-.social-footer{
+
+.social-footer {
     margin: 0.5rem;
 }
-.span-footer{
+
+.span-footer {
     color: var(--color-text-white);
     font-family: var(--main-font-family);
     margin: 1rem;
 }
-.div-logo-footer{
+
+.div-logo-footer {
     width: 20%;
     height: 7rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.logo-footer{
+
+.logo-footer {
     width: 40%;
     height: 100%;
-    
+
 }
 
 
 /**ICONS**/
-.bxl-html5{
+.bxl-html5 {
     color: rgb(236, 67, 0);
 }
-.bxl-css3{
+
+.bxl-css3 {
     color: rgb(0, 102, 255);
 }
-.bxl-javascript{
+
+.bxl-javascript {
     color: rgb(255, 200, 0);
 }
-.bxl-php{
+
+.bxl-php {
     color: rgb(74, 63, 170);
 }
-.bxl-git{
+
+.bxl-git {
     color: rgb(255, 0, 0);
 }
 
-.bxl-linkedin-square{
+.bxl-linkedin-square {
     color: rgb(0, 102, 255);
 }
-.bxl-github{
+
+.bxl-github {
     color: rgb(255, 255, 255);
 }
 
-.bxl-html5:hover{
-    filter: drop-shadow(2px 4px 5px #FFF);
+.bxl-react {
+    color: rgb(0, 117, 172);
 }
-.bxl-css3:hover{
-    filter: drop-shadow(2px 4px 5px #FFF);
-}
-.bxl-javascript:hover{
-    filter: drop-shadow(2px 4px 5px #FFF);
-}
-.bxl-php:hover{
-    filter: drop-shadow(2px 4px 5px #FFF);
-}
-.bxl-git:hover{
-    filter: drop-shadow(2px 4px 5px #FFF);
-}
-.bxl-linkedin-square:hover{
-    filter: drop-shadow(2px 4px 5px #FFF);
-}
-.bxl-github:hover{
+
+.bxl-react:hover {
     filter: drop-shadow(2px 4px 5px #FFF);
 }
 
-.scroll-top{
+.bxl-html5:hover {
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+.bxl-css3:hover {
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+.bxl-javascript:hover {
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+.bxl-php:hover {
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+.bxl-git:hover {
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+.bxl-linkedin-square:hover {
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+.bxl-github:hover {
+    filter: drop-shadow(2px 4px 5px #FFF);
+}
+
+
+.scroll-top {
     position: fixed;
     border: none;
     bottom: 5%;
@@ -280,12 +317,13 @@ footer{
     pointer-events: none;
     transition: all .4s;
 }
-.scroll-top.active{
+
+.scroll-top.active {
     opacity: 1;
     pointer-events: auto;
 }
 
-.btn-wpp{
+.btn-wpp {
     position: fixed;
     bottom: 15%;
     right: 3%;
@@ -299,23 +337,26 @@ footer{
     z-index: 999;
 }
 
-.bxl-whatsapp{
+.bxl-whatsapp {
     color: var(--color-text-white);
 }
-.bx-chevron-up{
+
+.bx-chevron-up {
     color: var(--body-color);
 }
 
-.secundaria{
+.secundaria {
     text-align: center;
     margin: 2rem;
 }
-.title-principal-sobre{
+
+.title-principal-sobre {
     font-family: var(--menu-font-family);
     color: var(--color-text-white);
     font-size: xx-large;
 }
-.second{
+
+.second {
     width: 100%;
     height: auto;
     display: flex;
@@ -323,29 +364,69 @@ footer{
     align-items: center;
     justify-content: space-evenly;
 }
-.div-foto2{
+
+.div-foto2 {
     width: 25%;
     height: auto;
     margin: 2rem;
 }
-.foto2{
+
+.foto2 {
     width: 20vw;
     height: 40vh;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     margin-left: 2rem;
+    margin: auto;
+    border: double var(--color-navbar-one) 1rem;
 }
 
-.sobre{
+.sobre {
     margin-left: -15rem;
     font-family: var(--main-font-family);
     color: var(--color-text-white);
     box-shadow: 0px 5px 15px rgba(255, 255, 255, .25);
     width: 50%;
-    margin: 1rem;
+    margin: 2rem;
+    margin-top: 4rem;
     padding: 1rem;
     border-radius: 1rem;
 }
-.title-sobre{
+
+.title-sobre {
     text-align: center;
+    margin: 0.5rem;
+}
+
+.sub-sobre {
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, .25);
+    margin: 1rem;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    height: auto;
+}
+
+.sub-sobre span {
+    border-bottom: solid #FFF 1px;
+}
+
+.sub-sobre p {
+    margin-top: 1rem;
+}
+
+.align-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sub-sobre:hover {
+    transform: scale(105%);
+    transition: all .5s;
+}
+
+.foto2:hover {
+    transform: scale(110%);
+    transition: all .5s;
 }

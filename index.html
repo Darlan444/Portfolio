@@ -12,7 +12,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-
+    <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
@@ -37,7 +37,7 @@
 
     <main>
         <a href="#">
-            <button class="scroll-top" onclick="backTop();">
+            <button class="scroll-top" id="scrollTop" onclick="backTop();">
                 <i class="bx bx-chevron-up bx-md"></i>
             </button>
             <script src="js/backTop.js"></script>
@@ -85,7 +85,31 @@
                 </div>
                 <div class="sobre">
                     <h2 class="title-sobre">Desenvolvedor Web</h2>
-
+                    <div class="sub-sobre">
+                        <span>Formação</span>
+                        <p>Tecnólogo em Análise e Desenvolvimento de Sistemas - UNILEAO</p>
+                    </div>
+                    <div class="sub-sobre">
+                        <span>Residência</span>
+                        <p>Juazeiro do Norte - CE</p>
+                    </div>
+                    <div class="sub-sobre">
+                        <span>Habilidades</span>
+                        <p class="align-p">Conhecimento em HTML, CSS, JS, PHP. <i class='bx bxl-html5 html bx-sm'
+                                title="HTML"></i>
+                            <i class='bx bxl-css3 css bx-sm' title="CSS"></i>
+                            <i class='bx bxl-javascript js bx-sm' title="JavaScript"></i>
+                            <i class='bx bxl-php php bx-sm' title="PHP"></i>
+                        </p>
+                        <p class="align-p">
+                            Conhecimento em controle de versão com GIT. <i class='bx bxl-git git bx-sm' title="GIT"></i>
+                        </p>
+                    </div>
+                    <div class="sub-sobre">
+                        <span>Aprendizagem</span>
+                        <p class="align-p">Atualmente aprendendo REACT <i class="bx bxl-react react bx-sm"
+                                title="REACT"></i></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -105,6 +129,10 @@
         </div>
         <span class="span-footer">© Copyright Darlan Santos. All Rights Reserved</span>
     </footer>
+
+
+    <script src="js/scrollReveal.js"></script>
+
 
 </body>
 

@@ -8,8 +8,6 @@ window.addEventListener('scroll', () => {
     }
 })
 
-document.querySelector(".scroll-top").onclick = scrolltop();
-
 function scrolltop(){
     window.scrollTo({
         top: 0,

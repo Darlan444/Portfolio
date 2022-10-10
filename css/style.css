@@ -303,6 +303,7 @@ footer {
 .scroll-top {
     position: fixed;
     border: none;
+    outline: none;
     bottom: 5%;
     right: 3%;
     background-color: var(--color-navbar-one);
@@ -350,7 +351,7 @@ footer {
     margin: 2rem;
 }
 
-.title-principal-sobre {
+.title-principal-sobre, .title-principal-projetos {
     font-family: var(--menu-font-family);
     color: var(--color-text-white);
     font-size: xx-large;
@@ -430,3 +431,12 @@ footer {
     transform: scale(110%);
     transition: all .5s;
 }
+
+
+.terceira{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

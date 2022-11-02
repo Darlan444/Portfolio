@@ -346,12 +346,12 @@ footer {
     color: var(--body-color);
 }
 
-.secundaria {
+.part {
     text-align: center;
     margin: 2rem;
 }
 
-.title-principal-sobre, .title-principal-projetos {
+.title-principal, .title-principal-projetos {
     font-family: var(--menu-font-family);
     color: var(--color-text-white);
     font-size: xx-large;
@@ -374,7 +374,7 @@ footer {
 
 .foto2 {
     width: 20vw;
-    height: 40vh;
+    height: 60vh;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     margin-left: 2rem;
@@ -432,11 +432,51 @@ footer {
     transition: all .5s;
 }
 
-
-.terceira{
+.div-projetos{
+    margin: 1rem;
+    padding: 1rem;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    border: solid red;
+}
+.area-projeto{
+    width: 40vw;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid yellow; 
+}
+.area-projeto:hover{
+    transform: scale(1.2);
+    transition: all .5s;
+    z-index: 999;
+    background-color: var(--body-color-2);
+}
+.img-projeto{
+    width: 80%;
+    height: 65%;
+}
+.title-projeto{
+    color: var(--color-text-white);
+    font-family: var(--main-font-family);
+    margin: 1rem;
+}
+.btn-projeto{
+    background-color: var(--color-navbar-one);
+    color: var(--color-text-white);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 5rem;
+    height: 2rem;
 }
-
 

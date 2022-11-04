@@ -19,6 +19,7 @@ html {
     --color-footer: #404040;
     --font-size-1: 3rem;
     --body-color-2: #505050;
+    --color-btn: #ffa704;
 }
 
 ::-webkit-scrollbar {
@@ -423,8 +424,8 @@ footer {
 }
 
 .sub-sobre:hover {
-    transform: scale(105%);
-    transition: all .5s;
+    transform: scale(105%)!important;
+    transition: all .5s!important;
 }
 
 .foto2:hover {
@@ -433,6 +434,7 @@ footer {
 }
 
 .div-projetos{
+    margin-top: 4rem!important;
     margin: 1rem;
     padding: 1rem;
     width: auto;
@@ -443,16 +445,16 @@ footer {
     align-items: center;
     flex-wrap: wrap;
     gap: 1rem;
-    border: solid red;
 }
 .area-projeto{
     width: 40vw;
-    height: 40vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid yellow; 
+    gap: 0.5rem;
+    border: var(--color-text-white) 1px solid;
 }
 .area-projeto:hover{
     transform: scale(1.2);
@@ -460,17 +462,23 @@ footer {
     z-index: 999;
     background-color: var(--body-color-2);
 }
+.p-desc{
+    font-family: var(--main-font-family);
+    color: var(--color-text-white);
+}
 .img-projeto{
-    width: 80%;
-    height: 65%;
+    width: 37vw;
+    height: 50vh;
 }
 .title-projeto{
     color: var(--color-text-white);
     font-family: var(--main-font-family);
+    font-size: x-large;
     margin: 1rem;
+    border-bottom: var(--color-text-white) 1px solid;
 }
 .btn-projeto{
-    background-color: var(--color-navbar-one);
+    background-color: var(--color-btn);
     color: var(--color-text-white);
     border-radius: 10px;
     display: flex;
@@ -478,5 +486,9 @@ footer {
     align-items: center;
     width: 5rem;
     height: 2rem;
+    margin: 1rem;
+}
+.btn-projeto:hover{
+    background-color: var(--color-navbar-one);
 }
 

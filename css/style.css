@@ -48,9 +48,28 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: fixed;
+    position: absolute;
     top: 0;
     z-index: 999;
+}
+
+.btn-menu{
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    cursor: pointer;
+    color: var(--color-text-white);
+    font-family: var(--menu-font-family);
+    font-weight: normal;
+    font-size: medium;
+}
+
+.item {
+    margin: 4vh;
+    margin-left: 5rem;
+}
+
+.btn-menu:hover {
+    color: var(--body-color);
 }
 
 .logo {
@@ -120,19 +139,6 @@ body {
     margin-right: 5rem;
 }
 
-.itens a {
-    color: var(--color-text-white);
-    font-family: var(--menu-font-family);
-}
-
-.item {
-    margin: 4vh;
-    margin-left: 5rem;
-}
-
-.itens a:hover {
-    color: var(--body-color);
-}
 
 main {
     margin-top: 10vh;

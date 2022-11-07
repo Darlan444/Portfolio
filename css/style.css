@@ -236,6 +236,10 @@ footer {
 
 
 /**ICONS**/
+
+.bx-dots-horizontal-rounded{
+    color: var(--color-text-white);
+}
 .bxl-html5 {
     color: rgb(236, 67, 0);
 }
@@ -435,20 +439,20 @@ footer {
 
 .div-projetos{
     margin-top: 4rem!important;
-    margin: 1rem;
+    margin: 6vw!important;
     padding: 1rem;
     width: auto;
     height: auto;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1vw;
 }
 .area-projeto{
     width: 40vw;
-    height: auto;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -480,7 +484,7 @@ footer {
 .btn-projeto{
     background-color: var(--color-btn);
     color: var(--color-text-white);
-    border-radius: 10px;
+    border-radius: 10% 1rem;
     display: flex;
     justify-content: center;
     align-items: center;

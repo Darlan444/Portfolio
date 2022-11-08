@@ -529,6 +529,7 @@ footer {
     gap: 1rem;
     font-family: var(--main-font-family);
     color: var(--color-text-white);
+    pointer-events: none;
 }
 
 .bxs-phone{

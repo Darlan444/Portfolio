@@ -8,5 +8,5 @@ function scrollToProjetos(){
     window.scrollTo( 0, 1855 );
 }
 function scrollToContato(){
-    window.scrollTo( 0, 0 );
+    window.scrollTo( 0, 3400 );
 }

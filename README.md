@@ -1,2 +1,2 @@
 # PORTFÓLIO
-https://portfolio-darlansantos.vercel.app/
+https://darlansantos.vercel.app/

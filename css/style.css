@@ -569,10 +569,8 @@ footer {
         width: 5rem;
     }
     .btn-wpp, .scroll-top{
-        right: 2rem!important;
+        right: 1rem!important;
         position: fixed;
-        width: 3rem;
-        height: 3rem;
     }
     .principal{
         width: 100vw;

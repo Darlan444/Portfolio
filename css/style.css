@@ -552,7 +552,7 @@ footer {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 100%;
+        width: 100vw;
         height: 10%;
     }
     .div-span{
@@ -574,13 +574,19 @@ footer {
     }
     .principal{
         width: 100vw;
+        margin-top: 2rem;
+    }
+    .p-texto{
+        margin-top: 2rem;
     }
     .span-nome{
         width: 20rem;
         font-size: 2rem;
+        margin-top: 2rem;
     }
     .div-texto{
         width: 100vw;
+        margin-top: 2rem;
     }
     .typing {
         animation: typing 2s steps(22), blink .5s step-end infinite;
@@ -613,4 +619,5 @@ footer {
         width: 25vw;
         height: 30vh;
     }
+
 }

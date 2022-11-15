@@ -39,6 +39,7 @@ html {
 
 body {
     background-color: var(--body-color);
+    overflow-x: scroll;
 }
 
 .navbar {
@@ -48,7 +49,6 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
     top: 0;
     z-index: 999;
 }
@@ -541,11 +541,19 @@ footer {
     visibility: hidden;
 }
 
+.div-img-mob{
+    display: none;
+}
+
 
 @media (max-width:801px) {
+    ::-webkit-scrollbar {
+        display: none;
+    }
     body{
         max-width: 100vw;
         min-width: 100vw;
+        overflow-x: hidden;
     }
     header {
         display: flex;
@@ -553,27 +561,40 @@ footer {
         justify-content: center;
         align-items: center;
         width: 100vw;
-        height: 10%;
+        height: 10vh;
+        z-index: 9999;
+    }
+    main{
+        max-width: 100vw;
+    }
+    .navbar{
+        width: 100vw;
     }
     .div-span{
         display: none;
     }
     .bx-menu{
+        color: var(--body-color);
+        align-items: center;
+        visibility: visible;
+    }
+    .menu{
+        width: auto;
+        height: auto;
         display: block;
         position: absolute;
-        color: var(--body-color);
         right: 1rem;
-        visibility: visible;
     }
     .logo{
         width: 5rem;
     }
     .btn-wpp, .scroll-top{
-        right: 1rem!important;
+        right: 1.5rem;
         position: fixed;
     }
     .principal{
-        width: 100vw;
+        width: 100%;
+        height: auto;
         margin-top: 2rem;
     }
     .p-texto{
@@ -586,7 +607,7 @@ footer {
     }
     .div-texto{
         width: 100vw;
-        margin-top: 2rem;
+        height: auto;
     }
     .typing {
         animation: typing 2s steps(22), blink .5s step-end infinite;
@@ -604,20 +625,54 @@ footer {
             width: 19rem
         }
     }
-
-    .div-img{
-        position: absolute;
-        width: 100vw;
-        height: auto;
-        margin-top: -25rem;
-        margin-left: 1rem;
+    .img1{
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .img-foto{
-        width: 25vw;
+    .div-img-mob{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90vw;
+        height: 30vh;
+        margin-top: -5rem;
+    }
+    .img-foto-mob{
+        width: 80vw;
         height: 30vh;
     }
-
+    .div-img{
+        display: none;
+    }
+    .img-foto{
+        display: none;
+    }
+    .div-foto2{
+        display: none;
+    }
+    .part{
+        width: 100vw;
+    }
+    .sobre{
+        width: 90vw;
+        height: auto;
+    }
+    .div-projetos{
+        width: 90vw;
+        height: auto;
+    }
+    .area-projeto{
+        width: 90%;
+    }
+    .img-projeto{
+        width: 90%;
+        height: 70%;
+    }
+    .shadow{
+        width: 100vw;
+    }
+    .logo-footer{
+        width: 5rem;
+    }
 }

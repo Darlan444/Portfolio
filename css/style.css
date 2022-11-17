@@ -591,6 +591,7 @@ footer {
     .btn-wpp, .scroll-top{
         right: 1.5rem;
         position: fixed;
+        z-index: 9999;
     }
     .principal{
         width: 100%;
@@ -661,13 +662,20 @@ footer {
     .div-projetos{
         width: 90vw;
         height: auto;
+        margin: 0!important;
     }
     .area-projeto{
         width: 90%;
+        margin: 2rem auto;
     }
     .img-projeto{
         width: 90%;
         height: 70%;
+    }
+    .area-projeto:hover{
+        transform: scale(1.1);
+        transition: all .5s;
+        background-color: var(--body-color-2);
     }
     .shadow{
         width: 100vw;

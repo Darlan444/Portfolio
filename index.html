@@ -15,6 +15,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="js/scrollTo.js"></script>
+    <script src="js/scrollToMob.js"></script>
 
 
 </head>
@@ -23,12 +24,33 @@
 
     <header>
         <nav class="navbar">
+
             <div class="div-logo">
                 <img class="logo" src="img/DS-bg.png" alt="LOGO">
             </div>
-            <div class="menu">
-                <i class='bx bx-menu bx-md'></i>
+
+            <div  class="menu"  onclick="classMenu()">
+
+                <i id="icon-menu" class='bx bx-menu bx-md'></i>
+
+                <div class="div-span-mob" id="menuClass">
+
+                    <script src="js/closeMenu.js"></script>
+                    <i id="close" class='bx bx-x bx-lg' onclick="closeMenu()"></i>
+
+                    <ul class="itens-mob">
+                        <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToSobreMob()" >SOBRE</button></li>
+                        <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToProjetosMob()" >PROJETOS</button></li>
+                        <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToContatoMob()" >CONTATO</button></li>
+                    </ul>
+
+                </div>
             </div>
+
+            <script src="js/menu.js"></script>
+
+            
+
             <div class="div-span">
                 <ul class="itens">
                     <li class="item"><button class="btn-menu" id="toSobre" onclick="scrollToSobre()"
@@ -39,6 +61,7 @@
                             href="#contato">CONTATO</button></li>
                 </ul>
             </div>
+
         </nav>
     </header>
 

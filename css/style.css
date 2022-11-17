@@ -545,6 +545,10 @@ footer {
     display: none;
 }
 
+.div-span-mob{
+    display: none;
+}
+
 
 @media (max-width:801px) {
     ::-webkit-scrollbar {
@@ -589,7 +593,7 @@ footer {
         width: 5rem;
     }
     .btn-wpp, .scroll-top{
-        right: 1.5rem;
+        right: 1rem;
         position: fixed;
         z-index: 9999;
     }
@@ -682,5 +686,47 @@ footer {
     }
     .logo-footer{
         width: 5rem;
+    }
+    .div-span-mob{
+        display: none;
+    }
+    .div-span-mob.active{
+        display: block;
+        margin-top: 9rem;
+        background-color: var(--color-navbar-one);
+        border-radius: 20px;
+        color: var(--color-text-white);
+        width: 35vw;
+        height: auto;
+        z-index: 99999;
+        visibility: visible;
+    }
+    .div-span-mob.active ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 1rem;
+        text-decoration: none;
+        list-style: none;
+        background-color: var(--color-navbar-one);
+
+    }
+    .div-span-mob.active i{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 100%;
+        height: 12vh;
+    }
+    .btn-menu-mob{
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        cursor: pointer;
+        color: var(--color-text-white);
+        font-family: var(--menu-font-family);
+        font-weight: normal;
+        font-size: medium;
+        margin: 1rem;
     }
 }

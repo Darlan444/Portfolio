@@ -16,6 +16,7 @@
 
     <script src="js/scrollTo.js"></script>
     <script src="js/scrollToMob.js"></script>
+    <script src="js/menu.js"></script>
 
 
 </head>
@@ -29,16 +30,15 @@
                 <img class="logo" src="img/DS-bg.png" alt="LOGO">
             </div>
 
-            <div  class="menu"  onclick="classMenu()">
+            <div class="menu"  onclick="classMenu()">
 
                 <i id="icon-menu" class='bx bx-menu bx-md'></i>
 
                 <div class="div-span-mob" id="menuClass">
 
-                    <script src="js/closeMenu.js"></script>
                     <i id="close" class='bx bx-x bx-lg' onclick="closeMenu()"></i>
 
-                    <ul class="itens-mob">
+                    <ul id="list" class="itens-mob">
                         <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToSobreMob()" >SOBRE</button></li>
                         <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToProjetosMob()" >PROJETOS</button></li>
                         <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToContatoMob()" >CONTATO</button></li>
@@ -46,10 +46,6 @@
 
                 </div>
             </div>
-
-            <script src="js/menu.js"></script>
-
-            
 
             <div class="div-span">
 

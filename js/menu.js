@@ -1,4 +1,6 @@
+
 function classMenu() {
+    if (event.type === 'touchstart') event.preventDefault();
     let el = document.getElementById('menuClass');
     let i = document.getElementById('close');
     let ul = document.getElementById('list');

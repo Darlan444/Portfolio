@@ -30,28 +30,28 @@
                 <img class="logo" src="img/DS-bg.png" alt="LOGO">
             </div>
 
-            <div class="menu" onclick="classMenu()">
+            <div class="menu" onchange="toggle()">
 
-                <input class="check" type="checkbox" id="checkbox" >
+                <input class="check" type="checkbox" id="checkbox">
                 <label for="checkbox" class="toggle">
                     <div class="bars" id="bar1"></div>
                     <div class="bars" id="bar2"></div>
                     <div class="bars" id="bar3"></div>
                 </label>
 
-                <div class="div-span-mob" id="menuClass">
+            </div>
 
-                    <ul id="list" class="itens-mob">
-                        <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToSobreMob()">SOBRE</button>
-                        </li>
-                        <li class="item-mob"><button class="btn-menu-mob"
-                                onclick="scrollToProjetosMob()">PROJETOS</button></li>
-                        <li class="item-mob"><button class="btn-menu-mob"
-                                onclick="scrollToContatoMob()">CONTATO</button></li>
-                    </ul>
+            <div class="menuClass" id="menuClass">
 
-                </div>
-
+                <ul id="list" class="itens-mob">
+                    <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToSobreMob()">SOBRE</button>
+                    </li>
+                    <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToProjetosMob()">PROJETOS</button>
+                    </li>
+                    <li class="item-mob"><button class="btn-menu-mob" onclick="scrollToContatoMob()">CONTATO</button>
+                    </li>
+                </ul>
+                
             </div>
 
             <div class="div-span">
